@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="防洪标准\n(年)"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="堤防长度\n(km)"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="设计水位\n(m)"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="工程级别"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="型式"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="建设情况"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="工程任务"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="管理单位"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+</LinearLayout>

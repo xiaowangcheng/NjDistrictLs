@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/theme_blue">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_blue_selector"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/back_white_n"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="闸门工情"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab"
+            android:layout_width="149dp"
+            android:layout_height="26dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/showAll"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tabswitch_left_normal"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/theme_blue"/>
+
+            <TextView
+                android:id="@+id/showMe"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/tabswitch_right_focus"
+                android:gravity="center"
+                android:text="重要站点"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/switchButton"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_blue_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="地图"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间：2017-03-30"
+                android:textColor="@color/text_black"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/districtLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="地点：全部"
+                android:textColor="@color/text_black"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/district"
+                android:background="@mipmap/jiantou"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/filterLayout3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/filter3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="水系：全部"
+                android:textColor="@color/text_black"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/filter3"
+                android:background="@mipmap/jiantou"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include
+        android:id="@+id/bottomLayout"
+        layout="@layout/layout_bottom_bar_search"/>
+</LinearLayout>

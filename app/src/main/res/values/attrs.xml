@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="themeColor" format="reference|color"/>
+    <attr name="homeTitle" format="string"/>
+    <attr name="themeColorSelector" format="reference"/>
+    <attr name="textColorTabSelector" format="reference"/>
+</resources>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/theme_blue">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_blue_selector"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/back_white_n" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_report"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="上报"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mv_map"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></com.amap.api.maps.MapView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/ll_report_item"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    style="@style/tv_report_item"
+                    android:text="出险时间" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+
+            <View style="@style/seperate_line" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_xqkind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="险情种类" />
+
+                    <Spinner
+                        android:id="@+id/sp_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp" />
+                    <!--<EditText-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textSize="16sp"></EditText>-->
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="*险情类别" />
+
+                    <EditText
+                        android:id="@+id/et_xqlb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="*地点" />
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="位置" />
+
+                    <EditText
+                        android:id="@+id/et_position"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="各种代表尺寸" />
+
+                    <EditText
+                        android:id="@+id/et_size"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="综合情况的描述" />
+
+                    <EditText
+                        android:id="@+id/et_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="险情原因分析" />
+
+                    <EditText
+                        android:id="@+id/et_reason"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="险情预测" />
+
+                    <EditText
+                        android:id="@+id/et_prediction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="可能影响的范围" />
+
+                    <EditText
+                        android:id="@+id/et_range"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="抢险方案" />
+
+                    <EditText
+                        android:id="@+id/et_method"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="通信手段" />
+
+                    <EditText
+                        android:id="@+id/et_communication"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="抢险物资配备情况" />
+
+                    <EditText
+                        android:id="@+id/et_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="抢险进展情况" />
+
+                    <EditText
+                        android:id="@+id/et_prosess"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+                <LinearLayout style="@style/ll_report_item">
+
+                    <TextView
+                        style="@style/tv_report_item"
+                        android:text="抢险效果" />
+
+                    <EditText
+                        android:id="@+id/et_effect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <View style="@style/seperate_line" />
+
+
+            </LinearLayout>
+
+            <View style="@style/seperate_line_8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经纬度"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_latLng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View style="@style/seperate_line_8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tv_report_item"
+                    android:layout_weight="1"
+                    android:text="相关人员" />
+
+                <EditText
+                    android:id="@+id/et_mems"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="3"
+                    android:drawablePadding="5dp"
+                    android:enabled="false"
+                    android:textColor="@color/light_blue"
+                    android:textSize="16sp"></EditText>
+
+                <ImageView
+                    android:id="@+id/iv_choise"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/zhsl_arrowright" />
+            </LinearLayout>
+
+            <View style="@style/seperate_line_8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="问题描述："
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#fff"
+                    android:gravity="left"
+                    android:hint="请输入具体描述"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View style="@style/seperate_line_8dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_btn_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/layout5radius_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@mipmap/fujian_paizhao"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="添加照片"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <net.htwater.njdistrictfx.view.ExpandedGridView
+                android:id="@+id/ex_gv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <View style="@style/seperate_line_8dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_btn_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/layout5radius_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@mipmap/fujian_luyin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:text="录音"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!--<ExpandedListView-->
+                <!--android:id="@+id/ex_lv_audio"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:divider="#E2E2E2"-->
+                <!--android:dividerHeight="0.8dp"-->
+                <!--android:listSelector="@drawable/task_list_selector"-->
+                <!--android:visibility="gone" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_btn_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/layout5radius_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@mipmap/fujian_luxiang"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="添加视频"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <net.htwater.njdistrictfx.view.ExpandedGridView
+                android:id="@+id/ex_lv_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <View style="@style/seperate_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="上报"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp"
+                android:background="@color/text_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

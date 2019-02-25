@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题蓝色 -->
+    <!--<color name="theme_blue">#1B97EC</color>-->
+    <!--<color name="theme_blue">#197DF6</color>-->
+    <!--<color name="theme_blue">#23AC38</color>-->
+    <color name="theme_blue">#7AD171</color>
+
+    <!-- 主题橙色 -->
+    <color name="theme_orange">#FF6700</color>
+    <color name="theme_red">#F14738</color>
+    <!-- 列表顶栏的灰色 -->
+    <color name="smoke">#ECECEC</color>
+    <!-- 分割线 -->
+    <color name="divider_gray">#DFDFDF</color>
+    <color name="text_black">#333</color>
+    <color name="text_gray">#858585</color>
+    <!-- 个别文本使用的浅蓝色 -->
+    <color name="light_blue">#29b0ff</color>
+    <!-- 柱形图使用的绿色 -->
+    <color name="green">#50B432</color>
+    <!-- 按钮使用的红色 -->
+    <color name="red">#F23030</color>
+    <!-- 首页编辑按钮使用的绿色 -->
+    <color name="button_green">#4ADB63</color>
+    <!--登陆界面使用的蓝色背景-->
+    <color name="login_blue">#08ABE1</color>
+    <!--今日值班背景-->
+    <color name="rota_today_bg">#E1980F</color>
+    <color name="rota_tommorrow_bg">#42AFB6</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="seperate_line">#E2E2E2</color>
+    <color name="popwin_text">#007AFF</color>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/theme_blue">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="溧水区防汛"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@color/smoke"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/functionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/switchText1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/theme_blue"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/switchText2"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/switchText3"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/switchText4"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/switchText5"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/switchText6"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/switchText7"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

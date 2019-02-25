@@ -1,0 +1,213 @@
+{
+  "menu": {
+    "class_id#1": [
+      {
+        "menu_id": "1.1",
+        "menu": "天气预报",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.10",
+        "menu": "应急响应",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.11",
+        "menu": "历史同期水位对比",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.12",
+        "menu": "历史同期流量对比",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.3",
+        "menu": "水情预警",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.4",
+        "menu": "防汛简报",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.5",
+        "menu": "气象云图",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.6",
+        "menu": "分区雨量统计",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.7",
+        "menu": "周边站点",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.8",
+        "menu": "主要泵站运行情况",
+        "class_id": 1
+      },
+      {
+        "menu_id": "1.9",
+        "menu": "防汛值班",
+        "class_id": 1
+      }
+    ],
+    "class_id#2": [
+      {
+        "menu_id": "3.1",
+        "menu": "点雨量",
+        "class_id": 2
+      },
+      /*{
+        "menu_id": "3.2",
+        "menu": "面雨量",
+        "class_id": 2
+      },*/
+      {
+        "menu_id": "3.3",
+        "menu": "水情",
+        "class_id": 2
+      },
+      /*{
+        "menu_id": "3.4",
+        "menu": "水库水情",
+        "class_id": 2
+      },*/
+      {
+        "menu_id": "3.5",
+        "menu": "积淹点水情",
+        "class_id": 2
+      },
+      {
+        "menu_id": "3.6",
+        "menu": "泵站工情",
+        "class_id": 2
+      },
+      {
+        "menu_id": "3.7",
+        "menu": "周边站点",
+        "class_id": 2
+      }
+    /*,
+      {
+        "menu_id": "3.8",
+        "menu": "水质",
+        "class_id": 2
+      }*/
+    ],
+    "class_id#3": [
+      {
+        "menu_id": "2.1",
+        "menu": "天气预报",
+        "class_id": 3
+      },
+      {
+        "menu_id": "2.2",
+        "menu": "专业预报",
+        "class_id": 3
+      },
+      {
+        "menu_id": "2.3",
+        "menu": "气象云图",
+        "class_id": 3
+      },
+      {
+        "menu_id": "2.5",
+        "menu": "台风信息",
+        "class_id": 3
+      }
+    /*,
+      {
+        "menu_id": "2.4",
+        "menu": "雷达图",
+        "class_id": 3
+      },
+      {
+        "menu_id": "2.5",
+        "menu": "台风信息",
+        "class_id": 3
+      },
+      {
+        "menu_id": "2.7",
+        "menu": "三天天气图",
+        "class_id": 3
+      }*/
+    ],
+    "class_id#4": [
+      {
+        "menu_id": "4.1",
+        "menu": "河道",
+        "class_id": 4
+      },
+      {
+        "menu_id": "4.2",
+        "menu": "水库",
+        "class_id": 4
+      },
+      {
+        "menu_id": "4.5",
+        "menu": "泵站",
+        "class_id": 4
+      }
+    ],
+    "class_id#5": [
+      {
+        "menu_id": "5.1",
+        "menu": "防汛预案",
+        "class_id": 5
+      },
+      {
+        "menu_id": "5.2",
+        "menu": "防汛简报",
+        "class_id": 5
+      },
+      {
+        "menu_id": "5.5",
+        "menu": "水系图",
+        "class_id": 5
+      },
+     /* {
+        "menu_id": "5.7",
+        "menu": "调查评价成果",
+        "class_id": 5
+      },*/
+      {
+        "menu_id": "5.8",
+        "menu": "险工险段上报",
+        "class_id": 5
+      },
+      {
+        "menu_id": "5.9",
+        "menu": "险工险段查询",
+        "class_id": 5
+      }
+    ],
+    "module": [
+      {
+        "menu_id": "3",
+        "menu": "汛情",
+        "class_id": 2
+      },
+      {
+        "menu_id": "2",
+        "menu": "气象",
+        "class_id": 3
+      },
+      {
+        "menu_id": "4",
+        "menu": "工程",
+        "class_id": 4
+      },
+      {
+        "menu_id": "5",
+        "menu": "办公",
+        "class_id": 5
+      }
+    ]
+  }
+}

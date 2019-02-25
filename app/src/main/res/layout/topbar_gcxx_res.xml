@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="水普名称"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="级别"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="街道"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="集水面积"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="建设日期"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="设计重现期"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="校核重现期"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="设计洪水位\n(m)"-->
+        <!--android:textColor="@color/text_black"-->
+        <!--android:textSize="14sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="90dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:text="防洪库容\n(万m³)"-->
+    <!--android:textColor="@color/text_black"-->
+    <!--android:textSize="14sp"/>-->
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="总库容"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="兴利库容"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="校核水位"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="兴利水位"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="讯限水位"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="坝顶宽度"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="最大坝高"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="坝顶长度"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="偃顶高程"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="溢洪道底宽"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+</LinearLayout>

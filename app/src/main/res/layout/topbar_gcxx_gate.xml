@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="类型"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="闸孔数量"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="闸孔尺寸"-->
+        <!--android:textColor="@color/text_black"-->
+        <!--android:textSize="14sp"/>-->
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="工程等级"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="管理单位"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="区域"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="主要建筑物\n级别"-->
+        <!--android:textColor="@color/text_black"-->
+        <!--android:textSize="14sp"/>-->
+
+</LinearLayout>

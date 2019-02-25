@@ -1,0 +1,98 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!--    <style name="ThemeLowActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+            &lt;!&ndash;<item name="android:actionBarSize">42dp</item>&ndash;&gt;
+        </style>-->
+
+    <!-- 汛期 -->
+    <style name="AppTheme.Orange" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="themeColor">@color/theme_orange</item>
+        <item name="homeTitle">汛期</item>
+        <item name="themeColorSelector">@drawable/button_orange_selector</item>
+        <item name="textColorTabSelector">@drawable/textcolor_orange_tab_selector</item>
+    </style>
+    <!-- 非汛期 -->
+    <style name="AppTheme.Blue" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="themeColor">@color/theme_blue</item>
+        <item name="homeTitle">非汛期</item>
+        <item name="themeColorSelector">@drawable/button_blue_selector</item>
+        <item name="textColorTabSelector">@drawable/textcolor_blue_tab_selector</item>
+    </style>
+
+    <!--    &lt;!&ndash; 汛期 &ndash;&gt;
+        <style name="AppTheme.Red.NoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+            <item name="themeColor">@color/theme_red</item>
+            <item name="homeTitle">汛期</item>
+        </style>
+        &lt;!&ndash; 非汛期 &ndash;&gt;
+        <style name="AppTheme.Blue.NoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+            <item name="themeColor">@color/theme_blue</item>
+            <item name="homeTitle">非汛期</item>
+        </style>-->
+
+    <style name="CustomDatePickerDialog" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TransparentStyle" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ll_report_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tv_report_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.8</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="seperate_line">
+        <item name="android:background">#E2E2E2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="seperate_line_8dp">
+        <item name="android:background">#F0F0F0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+    </style>
+</resources>
